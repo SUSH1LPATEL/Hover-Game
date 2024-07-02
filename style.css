@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face{
+    font-family: "kghappy";
+    src: url(./fonts/KGHAPPY.ttf)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+h1, h3{
+    font-weight: 400;
+}
+body{
+    background-image: url(./images/css-pattern-by-magicpattern.png);
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2vh;
+    font-size: x-large;
+    flex-direction: column;
+}
+.welcome p{
+    font-size: x-small;
+    font-family: kghappy;
+    color: rgb(45, 45, 45);
+}
+.welcome h1, h3{
+   font-family: kghappy;
+}
+.welcome .e{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+.welcome p, h1, h3{
+    text-shadow: 1px 1px 40px rgb(175, 175, 175);
+}
+.welcome button{
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    font-family: kghappy;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: rgb(6, 24, 44) 0px 0px 0px 2px, rgba(6, 24, 44, 0.386) 0px 4px 6px -1px, rgba(255, 255, 255, 0) 0px 1px 0px inset;
+    border: none;
+    padding: 1px 8px;
+    border-radius: 4px;
+    background: black;
+}
+.welcome button:hover{
+    background: white;
+    color: black;
+}
+.play{
+    height: 96vh;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    position: relative;
+    justify-content: center;
+}
+.play .duration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    width: 335px;
+}
+.play .duration h3{
+    font-size: x-large;
+}
+.play .duration .rules{
+    text-align: center;
+    margin-top: 8px;
+}
+.play .duration .rules p{
+    font-family: kghappy;
+    font-size: x-small;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 3vh;
+}
+ul li button{
+    padding: 1px 9px;
+    font-size: large;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(6, 24, 44) 0px 0px 0px 2px, rgba(6, 24, 44, 0.386) 0px 4px 6px -1px, rgba(255, 255, 255, 0) 0px 1px 0px inset;
+    border: none;
+    border-radius: 4px;
+    color: rgb(25, 25, 25);
+    font-family: kghappy;
+    cursor: pointer;
+}
+ul li button:hover{
+    box-shadow: rgb(6, 24, 44) 0px 0px 0px 2px;
+    background: black;
+    color: white;
+}
+.play .timer{
+    background: rgb(32, 32, 32);
+    color: white;
+    /* width: 30px; */
+    text-align: center;
+    padding: 3px 8px;
+    border-radius: 50%;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.play .hoverBox{
+    background: rgb(32, 32, 32);
+    height: 24vh;
+    width: 24vh;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.play .hoverBox:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background: white;
+}
+.play .Timer{
+    padding: 1px 3px;
+    font-size: large;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(6, 24, 44) 0px 0px 0px 2px, rgba(6, 24, 44, 0.386) 0px 4px 6px -1px, rgba(255, 255, 255, 0) 0px 1px 0px inset;
+    border: none;
+    border-radius: 4px;
+    color: rgb(25, 25, 25);
+    font-family: kghappy;
+    cursor: pointer;
+    text-align: center;
+}
+.play .score{
+    padding: 1px 9px;
+    font-size: large;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(6, 24, 44) 0px 0px 0px 2px, rgba(6, 24, 44, 0.386) 0px 4px 6px -1px, rgba(255, 255, 255, 0) 0px 1px 0px inset;
+    border: none;
+    border-radius: 4px;
+    color: rgb(25, 25, 25);
+    font-family: kghappy;
+    cursor: pointer;
+}
+.play .container{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+.gameOver form{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    background: white;
+    box-shadow: rgb(6, 24, 44) 0px 0px 0px 2px, rgba(6, 24, 44, 0.386) 0px 4px 6px -1px, rgba(255, 255, 255, 0) 0px 1px 0px inset;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 20px;
+    height: 350px;
+    gap: 5vh;
+    text-align: center;
+    align-items: center;
+}
+.gameOver .score{
+    padding: 4px 10px;
+    gap: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90px;
+    border-radius: 4px;
+    box-shadow: rgb(6, 24, 44) 0px 0px 0px 2px, rgba(6, 24, 44, 0.386) 0px 4px 6px -1px, rgba(255, 255, 255, 0) 0px 1px 0px inset;
+}
+.gameOver .score h2, h3{
+    font-family: kghappy;
+    font-weight: 300;
+}
+.gameOver form h1{
+    font-family: kghappy;
+}
+.gameOver form .name{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.gameOver form .name label{
+    font-family: kghappy;
+}
+.gameOver form .name input{
+    border: none;
+    box-shadow: rgb(6, 24, 44) 0px 0px 0px 2px, rgba(6, 24, 44, 0.386) 0px 4px 6px -1px, rgba(255, 255, 255, 0) 0px 1px 0px inset;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-family: kghappy;
+    font-weight: 200;
+}
+
+
